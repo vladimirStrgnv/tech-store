@@ -1,0 +1,13 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__item {
+    margin-right: 15px;
+}
+
+.nav__item:last-child {
+    margin-right: 0px;
+}

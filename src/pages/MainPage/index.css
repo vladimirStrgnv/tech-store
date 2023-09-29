@@ -1,0 +1,56 @@
+.advantages {
+    display: flex;
+    padding: 20px 0;
+    font-family: "Roboto";
+}
+
+.advantages__info {
+    width: 660px;
+
+}
+
+.advantages__service-info {
+    margin-bottom: 40px;
+    padding: 20px 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.advantages__service-info-title {
+    margin-bottom: 20px;
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.advantages__service-info-description {
+    color: rgba(107, 107, 107, 1);
+    font-size: 18px;
+}
+
+.advantages__catalog_info {
+    padding: 20px 10px;
+    border-radius: 20px;
+    background-color: rgba(151, 170, 198, 1);
+}
+
+.advantages__catalog-info-title {
+    color: rgb(255, 255, 255);
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.advantages__catalog-info-description {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 60px;
+}
+
+.advantages__catalog-info-btn {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 22px;
+    color: rgba(23, 52, 131, 1);
+
+}

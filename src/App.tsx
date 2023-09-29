@@ -1,14 +1,9 @@
-import React from 'react';
-import './App.css';
+import "./App.css";
+import { RouterProvider } from "react-router";
+import BrowserRouter from "./router";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-      
-      </header>
-    </div>
-  );
+  return <RouterProvider router={BrowserRouter}></RouterProvider>;
 }
 
 export default App;
