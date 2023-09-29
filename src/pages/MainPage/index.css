@@ -2,10 +2,16 @@
     display: flex;
     padding: 20px 0;
     font-family: "Roboto";
+    justify-content: space-between;
+    height: 608px;
+
 }
 
 .advantages__info {
-    width: 660px;
+    width: 57%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 
 }
 
@@ -14,6 +20,19 @@
     padding: 20px 10px;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 1);
+}
+
+.advantages__tags-list {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.advantages__tag {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: rgba(151, 170, 198, 1);
+    color: rgb(255, 255, 255);
 }
 
 .advantages__service-info-title {
@@ -52,5 +71,15 @@
     border-radius: 20px;
     font-size: 22px;
     color: rgba(23, 52, 131, 1);
+}
+
+.advantages__img {
+    border-radius: 20px;
+    background:  no-repeat url('./assets/device.png') ;
+    height: 100%;
+    width: 40%;
+    /* background-size: contain; */
+    background-position: center;
 
 }
+
