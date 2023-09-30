@@ -24,7 +24,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
     <div className="product-card">
       <img src={image} alt="img" className="product-card__img" />
       <h2 className="product-card__title">{name}</h2>
-      <h3 className="product-card__price">Цена: {price}р.</h3>
+      <h3 className="product-card__price">Цена: <b>{price}р.</b></h3>
       {isChoosen ? (
         <RedirectBasketBtn></RedirectBasketBtn>
       ) : (

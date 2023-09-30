@@ -1,19 +1,5 @@
 .catalog {
     padding: 20px 0px;
+    font-family: 'Gilroy-Regular';
 }
 
-.product-list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 20px 20px;
-
-}
-
-.product-list-item {
-    flex: 1 1 30%; /*grow | shrink | basis */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}

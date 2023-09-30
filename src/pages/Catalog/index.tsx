@@ -3,7 +3,7 @@ import { useAppSelector } from "../../share/store";
 import { useEffect } from "react";
 import { getProducts } from "../../share/api";
 import { addProductsAction, chooseProductAction } from "../../share/store/catalogReducer";
-import ProductCard from "./components/ProductCard";
+import ProductList from "./components/ProductList";
 import "./index.css";
 
 const Catalog = () => {
@@ -23,20 +23,7 @@ const Catalog = () => {
 
   return (
     <section className="catalog">
-      <ul className="product-list">
-        {products.map((product) => (
-          <li className="product-list-item" key={product.id}>
-            <ProductCard
-              image={product.image}
-              name={product.name}
-              price={product.price}
-              choosePropuct={choosePropuct.bind(null, product)}
-              id={product.id}
-              isChoosen={choosenProducts.some(choosenProduct => choosenProduct.id === product.id)}
-            ></ProductCard>
-          </li>
-        ))}
-      </ul>
+      <ProductList products={products} choosenProducts={choosenProducts} choosePropuct={choosePropuct}></ProductList>
     </section>
   );
 };

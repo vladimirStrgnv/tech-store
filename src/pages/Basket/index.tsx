@@ -4,6 +4,7 @@ import { useAppSelector } from "../../share/store";
 import { deleteChoosenProductAction } from "../../share/store/catalogReducer";
 import { useDispatch } from "react-redux";
 import BasketEmpty from "./components/BasketEmpty";
+import { motion } from "framer-motion";
 
 function createData(name: string, price: number, id?: number) {
   return { name, price, id };
@@ -27,7 +28,12 @@ const Basket = () => {
   }
 
   return (
-    <section className="basket">
+    <motion.section
+      className="basket"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
+    >
       {choosenProducts.length ? (
         <BasketTable
           tableData={tableData}
@@ -37,7 +43,7 @@ const Basket = () => {
       ) : (
         <BasketEmpty></BasketEmpty>
       )}
-    </section>
+    </motion.section>
   );
 };
 

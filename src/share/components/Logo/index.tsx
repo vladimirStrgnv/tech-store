@@ -4,8 +4,10 @@ import './index.css';
 
 const Logo  = () => {
     return (
-        <div className='logo'><Link to='/' >NPS</Link></div>
-    )
+      <Link to="/">
+        <div className="logo">NPS</div>
+      </Link>
+    );
   }
   
   export default Logo;

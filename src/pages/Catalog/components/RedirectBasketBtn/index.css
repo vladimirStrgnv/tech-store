@@ -3,6 +3,7 @@
     padding: 10px 15px;
     border-radius: 10px;
     transition: 0.4s;
+    font-family: 'Gilroy-Bold';
 }
 
 .product-card__redirect-basket-btn:hover {

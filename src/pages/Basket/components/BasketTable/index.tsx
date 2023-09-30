@@ -44,7 +44,7 @@ const BasketTable = ({ tableData, deleteTableItem, totalSum }) => {
             <TableRow
               sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
             >
-              <TableCell>Итого: {totalSum}</TableCell>
+              <TableCell>Итого: <b>{totalSum} р.</b></TableCell>
             </TableRow>
           </TableBody>
         </Table>
