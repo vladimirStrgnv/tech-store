@@ -15,6 +15,10 @@ const BrowserRouter = createHashRouter([
         path: "catalog",
         lazy: () => import("../pages/Catalog/index"),
       },
+      {
+        path: "basket",
+        lazy: () => import("../pages/Basket/index"),
+      },
     ],
   },
 ]);
