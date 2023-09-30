@@ -8,26 +8,33 @@ import {
   TableRow,
   Paper,
 } from "@mui/material";
+import { useAppSelector } from "../../share/store";
+import RemoveProductBtn from "./components/RemoveProductBtn";
+import { deleteChoosenProductAction } from "../../share/store/catalogReducer";
+import { useDispatch } from "react-redux";
 
-function createData(
-  name: string,
-  calories: number,
-  fat: number,
-  carbs: number,
-  protein: number
-) {
-  return { name, calories, fat, carbs, protein };
+function createData(name: string, price: number, id?: number) {
+  return { name, price, id };
 }
 
-const rows = [
-  createData("Frozen yoghurt", 159, 6.0, 24, 4.0),
-  createData("Ice cream sandwich", 237, 9.0, 37, 4.3),
-  createData("Eclair", 262, 16.0, 24, 6.0),
-  createData("Cupcake", 305, 3.7, 67, 4.3),
-  createData("Gingerbread", 356, 16.0, 49, 3.9),
-];
-
 const Basket = () => {
+  const dispatch = useDispatch();
+  const { choosenProducts } = useAppSelector((state) => state.catalog);
+
+  const sum: number = choosenProducts.reduce((currentSum, currentProduct) => {
+    const price = currentProduct.price;
+    return currentSum + price
+  }, 0 )
+
+
+  const tableData = choosenProducts.map((product) =>
+    createData(product.name, product.price, product.id)
+  );
+
+  function deleteChoosenPropuct(id: any) {
+    dispatch(deleteChoosenProductAction({id}));
+  }
+
   return (
     <section className="basket">
       <TableContainer component={Paper}>
@@ -35,28 +42,35 @@ const Basket = () => {
           <TableHead>
             <TableRow>
               <TableCell>Наименование товара</TableCell>
-              <TableCell align="right">Цена</TableCell>
+              <TableCell align="center">Цена</TableCell>
               <TableCell align="right"></TableCell>
-
             </TableRow>
           </TableHead>
           <TableBody>
-            {rows.map((row) => (
+            {tableData.map((row) => (
               <TableRow
                 key={row.name}
                 sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
               >
-                <TableCell component="th" scope="row" >
+                <TableCell component="th" scope="row">
                   {row.name}
                 </TableCell>
+                <TableCell align="center">{row.price} р.</TableCell>
                 <TableCell align="right">
-                    {row.calories}
-                </TableCell>
-                <TableCell align="right">
-                    <button>Убрать из корзины</button>
+                  <RemoveProductBtn
+                    deleteChoosenPropuct={deleteChoosenPropuct.bind(
+                      null,
+                      row.id
+                    )}
+                  ></RemoveProductBtn>
                 </TableCell>
               </TableRow>
             ))}
+            <TableRow
+              sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+            >
+              <TableCell>Итого: {sum}</TableCell>
+            </TableRow>
           </TableBody>
         </Table>
       </TableContainer>

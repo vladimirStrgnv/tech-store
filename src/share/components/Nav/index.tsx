@@ -1,4 +1,5 @@
 import NavItem from "../NavItem";
+import BasketNavItem from "../BasketNavItem";
 import "./index.css";
 
 const Nav = () => {
@@ -11,8 +12,9 @@ const Nav = () => {
         <NavItem text="Каталог" link="/catalog"></NavItem>
       </div>
       <div className="nav__item">
-        <NavItem text="Корзина" link="/basket"></NavItem>
+        <BasketNavItem></BasketNavItem>
       </div>
+
     </ul>
   );
 };
