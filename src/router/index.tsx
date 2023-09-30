@@ -6,11 +6,15 @@ const BrowserRouter = createHashRouter([
     path: "/",
     element: <Layout />,
     children: [
-        {
-            index: true,
-            path: "/",
-            lazy: () => import("../pages/MainPage/index"),
-          },
+      {
+        index: true,
+        path: "/",
+        lazy: () => import("../pages/MainPage/index"),
+      },
+      {
+        path: "catalog",
+        lazy: () => import("../pages/Catalog/index"),
+      },
     ],
   },
 ]);
