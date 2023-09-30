@@ -8,6 +8,11 @@
     width: 20px;
     background: no-repeat url('../../assets/shopping-basket.svg');
     background-size: contain;
+    transition: 0.5s;
+}
+
+.basket-nav-item__img:hover {
+    filter: brightness(0) saturate(100%) invert(76%) sepia(25%) saturate(4060%) hue-rotate(9deg) brightness(106%) contrast(96%);
 }
 
 .basket-nav-item__counter {

@@ -6,8 +6,8 @@ import RedirectBasketBtn from '../RedirectBasketBtn';
 interface ProductCardProps {
     image: string,
     name: string,
-    price: string,
-    id: string,
+    price: number,
+    id: number,
     choosePropuct: ()=> void,
     isChoosen: boolean
 }

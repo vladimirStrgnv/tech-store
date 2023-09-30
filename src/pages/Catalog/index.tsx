@@ -17,14 +17,14 @@ const Catalog = () => {
     fetch();
   }, []);
 
-  function choosePropuct(product: any) {
+  function choosePropuct(product) {
     dispatch(chooseProductAction(product));
   }
 
   return (
     <section className="catalog">
       <ul className="product-list">
-        {products.map((product: any) => (
+        {products.map((product) => (
           <li className="product-list-item" key={product.id}>
             <ProductCard
               image={product.image}

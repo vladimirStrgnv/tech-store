@@ -3,6 +3,13 @@
     padding: 5px 15px;
     border-radius: 20px;
     text-align: center;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    color: #ffffff;
+    transition: 0.6s;
+    background-color: #f8bb36;
 }
 
 .nav-item-active {

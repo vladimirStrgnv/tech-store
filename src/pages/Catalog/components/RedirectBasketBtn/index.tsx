@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
-import './index.css';
+import "./index.css";
 
 const RedirectBasketBtn = () => {
   return (
-    <button
-      className="product-card__add-product-btn"
-    >
-      <Link to={'/basket'}>Оформить заказ</Link>
-    </button>
+    <Link to={"/basket"}>
+      <button className="product-card__redirect-basket-btn">
+        Оформить заказ
+      </button>
+    </Link>
   );
 };
 
