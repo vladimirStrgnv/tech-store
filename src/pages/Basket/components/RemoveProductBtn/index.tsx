@@ -6,7 +6,7 @@ const RemoveProductBtn = ({ deleteChoosenPropuct }) => {
       onClick={() => deleteChoosenPropuct()}
       className="basket__delete-product-btn"
     >
-      Убрать из корзины
+      Убрать
     </button>
   );
 };

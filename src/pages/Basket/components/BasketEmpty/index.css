@@ -1,0 +1,39 @@
+.basket__empty-page {
+    position: relative;
+    height: 60vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.basket__empty-page-img {
+    position: absolute;
+    background: no-repeat url('../../assets/empty-basket.png');
+    background-size: contain;
+    height: 300px;
+    width: 300px;
+    left: 0;
+    right: 0;
+    top: 80px;
+    margin: auto;
+}
+
+.basket__empty-page-info {
+    padding-top: 120px;
+    z-index: 10;
+    text-align: center;
+}
+
+.basket__empty-page-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.basket__redirect-catalog-btn {
+    padding: 5px 12px;
+    border-radius: 10px;
+    background-color: rgb(206, 151, 79);
+    color: rgb(255, 255, 255);
+}
