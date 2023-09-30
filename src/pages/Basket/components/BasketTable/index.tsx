@@ -13,7 +13,7 @@ const BasketTable = ({ tableData, deleteTableItem, totalSum }) => {
   return (
     <div>
       <TableContainer component={Paper}>
-        <Table sx={{ minWidth: 650 }} aria-label="simple table">
+        <Table aria-label="simple table">
           <TableHead>
             <TableRow>
               <TableCell>Наименование товара</TableCell>

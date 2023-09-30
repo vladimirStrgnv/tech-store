@@ -24,11 +24,17 @@
     padding-top: 120px;
     z-index: 10;
     text-align: center;
+    
 }
 
 .basket__empty-page-title {
     font-size: 24px;
     font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.basket__empty-page-descrpt {
+    margin-bottom: 10px;
 }
 
 .basket__redirect-catalog-btn {

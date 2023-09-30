@@ -4,7 +4,7 @@ import './index.css';
 
 const Logo  = () => {
     return (
-        <div className='logo'><Link to='/' >DNPS.</Link></div>
+        <div className='logo'><Link to='/' >NPS</Link></div>
     )
   }
   

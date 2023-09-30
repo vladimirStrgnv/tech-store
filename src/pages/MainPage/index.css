@@ -12,11 +12,9 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-
 }
 
 .advantages__service-info {
-    margin-bottom: 40px;
     padding: 20px 10px;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 1);
@@ -78,8 +76,70 @@
     background:  no-repeat url('./assets/device.png') ;
     height: 100%;
     width: 40%;
-    /* background-size: contain; */
     background-position: center;
-
 }
 
+@media (max-width: 768px) {
+    .advantages__tags-list {
+        margin-bottom: 15px;
+    }
+
+    .advantages__service-info-title {
+        margin-bottom: 10px;
+        font-size: 32px;
+    }
+
+    .advantages__catalog-info-title {
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .advantages__catalog-info-btn {
+        padding: 3px 7px;
+        border-radius: 20px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .advantages {
+        height: 340px;
+    }
+
+    .advantages__info {
+        width: 100%;
+    }
+
+    .advantages__tags-list {
+        margin-bottom: 10px;
+    }
+
+    .advantages__service-info-title {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .advantages__catalog-info-title {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .advantages__catalog-info-description {
+
+        margin-bottom: 10px;
+    }
+
+    .advantages__tag {
+        margin-right: 5px;
+        padding: 3px 7px;
+        border-radius: 20px;
+        font-size: 10px;
+    }
+
+    .advantages__img {
+        display: none;
+    }
+
+}

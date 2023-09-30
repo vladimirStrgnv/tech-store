@@ -13,7 +13,7 @@
 .header__nav-container {
     display: flex;
     justify-content: space-between;
-    width: 650px
+    width: 57%
 }
 
 .header__contacts-container {
@@ -25,4 +25,10 @@
 .header__phone-number {
     font-size: 20px;
     font-weight: 700;
+}
+
+@media (max-width: 576px) {
+    .header__phone-number {
+        display: none;
+    }
 }

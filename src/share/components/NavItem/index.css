@@ -8,3 +8,12 @@
 .nav-item-active {
     color: #ffb108;
 }
+
+@media (max-width: 576px) { 
+    .nav-item {
+        padding: 2px 12px;
+        border-radius: 20px;
+        text-align: center;
+    }
+    
+}

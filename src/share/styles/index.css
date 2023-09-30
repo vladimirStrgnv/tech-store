@@ -104,3 +104,7 @@ body::-webkit-scrollbar {
 	border-radius: 10px;
   
   }
+
+body {
+	position: relative;
+}
