@@ -8,8 +8,16 @@ import {
   Paper,
 } from "@mui/material";
 import RemoveProductBtn from "../RemoveProductBtn";
+import React from "react";
+import { IProduct } from "../../../../share/store/products/types";
 
-const BasketTable = ({ tableData, deleteTableItem, totalSum }) => {
+interface IBasketTable {
+    deleteTableItem: (id: any)=> void,
+    tableData: IProduct[],
+    totalSum: number
+}
+
+const BasketTable: React.FC<IBasketTable> = ({ tableData, deleteTableItem, totalSum }) => {
   return (
     <div>
       <TableContainer component={Paper}>

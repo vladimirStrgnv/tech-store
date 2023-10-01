@@ -1,7 +1,10 @@
 import { createBrowserRouter, createHashRouter } from "react-router-dom";
 import Layout from "../share/components/Layout";
+import MainPage from "../pages/MainPage/index";
+import Catalog from "../pages/Catalog";
+import Basket from "../pages/Basket";
 
-const BrowserRouter = createBrowserRouter([
+const BrowserRouter = createHashRouter([
   {
     path: "/",
     element: <Layout />,
@@ -9,15 +12,16 @@ const BrowserRouter = createBrowserRouter([
       {
         index: true,
         path: "/",
-        lazy: () => import("../pages/MainPage/index"),
+        Component: MainPage
       },
       {
         path: "catalog",
-        lazy: () => import("../pages/Catalog/index"),
+        Component: Catalog
+
       },
       {
         path: "basket",
-        lazy: () => import("../pages/Basket/index"),
+        Component: Basket
       },
     ],
   },

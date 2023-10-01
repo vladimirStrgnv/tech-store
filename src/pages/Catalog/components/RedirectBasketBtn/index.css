@@ -1,9 +1,10 @@
 .product-card__redirect-basket-btn {
-    background-color: #cfa826;
+    background-color: #cfa8264f;
     padding: 10px 15px;
     border-radius: 10px;
     transition: 0.4s;
     font-family: 'Gilroy-Bold';
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
 }
 
 .product-card__redirect-basket-btn:hover {

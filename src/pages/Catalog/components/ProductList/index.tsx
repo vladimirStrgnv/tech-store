@@ -2,20 +2,32 @@ import "./index.css";
 import ProductCard from "../ProductCard";
 import { motion } from "framer-motion";
 import { listAnimationConfig } from "../../../../share/consts/animationsConfig";
+import { IProduct } from "../../../../share/store/products/types";
+import React from "react";
 
-const ProductList = ({ products, choosePropuct, choosenProducts }) => {
+interface IProductList {
+    choosePropuct: (product)=> void,
+    products: IProduct[],
+    choosenProducts: IProduct[]
+}
+
+const ProductList: React.FC<IProductList> = ({ products, choosePropuct, choosenProducts }) => {
   return (
     <motion.ul
       className="product-list"
       initial="hidden"
       whileInView="visible"
+      viewport={{ once: true }}
     >
       {products.map((product, index) => (
         <motion.li
+        initial="hidden"
+
+            animate="visible"
           className="product-list-item"
           key={product.id}
           variants={listAnimationConfig}
-          custom={index}
+          custom={index + 1}
         >
           <ProductCard
             image={product.image}

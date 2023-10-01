@@ -1,6 +1,11 @@
+import React from 'react';
 import './index.css';
 
-const BurgerIcon = ({onClick}) => {
+interface IBurgerIcon {
+    onClick: ()=> void
+}
+
+const BurgerIcon: React.FC<IBurgerIcon> = ({onClick}) => {
   return (
     <svg viewBox="0 0 100 40" width="40" height="25" fill="black" className={'burger-icon'} onClick={()=> onClick()}>
       <rect width="80" height="7"></rect>
