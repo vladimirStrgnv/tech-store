@@ -71,6 +71,8 @@
     font-size: 22px;
     color: rgba(23, 52, 131, 1);
     transition: 0.5s;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.7); 
+
 }
 
 .advantages__catalog-info-btn:hover {

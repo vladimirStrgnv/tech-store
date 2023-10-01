@@ -51,17 +51,20 @@
 .menu__link{
     font-size: 1.3rem;
     font-family: "Gilroy-Heavy";
-    color: #2c2647;
+    color: #000000;
     text-transform: uppercase;
     transition: 0.3s;
-
-
 }
 
 .menu__link:hover {
-    color: #FFC53D;;
+    color: #c5c0b3;;
 }
 
 .menu.active {
     transform: translateX(0%);
+}
+
+.menu__link__active {
+    color: #FFC53D;;
+
 }

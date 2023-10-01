@@ -1,14 +1,15 @@
 .product-card__add-product-btn {
-    background-color: #76bc21;
+    background-color: #76bc2157;
     padding: 10px 15px;
     border-radius: 10px;
     transition: 0.5s;
     font-family: 'Gilroy-Bold';
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
 }
 
 .product-card__add-product-btn:hover {
     color: aliceblue;
-    background-color: #5a990d;
+    background-color: #5a990d60;
 }
 
 @media (max-width: 576px) {

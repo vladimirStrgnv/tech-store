@@ -1,6 +1,11 @@
+import React from 'react';
 import './index.css';
 
-const AddBasketBtn = ({choosePropuct}) => {
+interface IAddBasketBtn {
+    choosePropuct: ()=> void
+}
+
+const AddBasketBtn: React.FC<IAddBasketBtn> = ({choosePropuct}) => {
   return (
     <button
       className="product-card__add-product-btn"

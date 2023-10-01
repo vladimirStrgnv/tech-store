@@ -1,6 +1,11 @@
+import React from "react";
 import "./index.css";
 
-const RemoveProductBtn = ({ deleteChoosenPropuct }) => {
+interface IRemoveProductBtn {
+    deleteChoosenPropuct: ()=> void,
+}
+
+const RemoveProductBtn: React.FC<IRemoveProductBtn> = ({ deleteChoosenPropuct }) => {
   return (
     <button
       onClick={() => deleteChoosenPropuct()}

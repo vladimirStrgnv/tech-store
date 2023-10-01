@@ -4,7 +4,7 @@ import { useAppSelector } from '../../store';
 
 const BasketNavItem = () => {
     const { choosenProducts } = useAppSelector(
-      (state) => state.catalog
+      (state) => state.products
     );
 
   return (
