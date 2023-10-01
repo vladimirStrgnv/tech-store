@@ -1,0 +1,31 @@
+.basket-nav-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.basket-nav-item__img {
+    height: 20px;
+    width: 20px;
+    background: no-repeat url('../../assets/shopping-basket.svg');
+    background-size: contain;
+    transition: 0.5s;
+}
+
+.basket-nav-item__img:hover {
+    filter: brightness(0) saturate(100%) invert(76%) sepia(25%) saturate(4060%) hue-rotate(9deg) brightness(106%) contrast(96%);
+}
+
+.basket-nav-item__counter {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -13px;
+    right: -21px;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(0, 0, 255, 0.575);
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    font-size: 12px;
+}

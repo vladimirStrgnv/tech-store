@@ -1,0 +1,20 @@
+.product-card__add-product-btn {
+    background-color: #76bc21;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: 0.5s;
+    font-family: 'Gilroy-Bold';
+}
+
+.product-card__add-product-btn:hover {
+    color: aliceblue;
+    background-color: #5a990d;
+}
+
+@media (max-width: 576px) {
+    .product-card__add-product-btn {
+        padding: 8px 13px;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+}

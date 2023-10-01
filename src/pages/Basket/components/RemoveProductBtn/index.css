@@ -1,0 +1,16 @@
+.basket__delete-product-btn {
+    background-color: brown;
+    padding: 7px 14px;
+    border-radius: 10px;
+    color: aliceblue;
+    transition: 0.5s;
+    border: 1px solid brown;
+    font-family: 'Gilroy-Bold';
+}
+
+.basket__delete-product-btn:hover {
+    color: brown;
+    padding: 7px 14px;
+    border-radius: 10px;
+    background-color: aliceblue;
+}

@@ -1,0 +1,13 @@
+.wrapper {
+    min-height: 100vh;
+    background-color:#F0F3F7;
+    position: relative;
+    padding: 10px 10px;
+    
+
+}
+
+.inner {
+    max-width: 1160px;
+    margin: 0 auto;
+}

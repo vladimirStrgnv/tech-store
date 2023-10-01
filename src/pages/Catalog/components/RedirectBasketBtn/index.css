@@ -1,0 +1,20 @@
+.product-card__redirect-basket-btn {
+    background-color: #cfa826;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: 0.4s;
+    font-family: 'Gilroy-Bold';
+}
+
+.product-card__redirect-basket-btn:hover {
+    color: aliceblue;
+    background-color: #e7be38;
+}
+
+@media (max-width: 576px) {
+    .product-card__redirect-basket-btn {
+        padding: 8px 13px;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+}
